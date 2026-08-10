@@ -1,8 +1,6 @@
 # Debugging a 12-bit DVI Pmod on the iCEBreaker
 
-A record of bringing up a hand-soldered 1BitSquared 12-bit DVI Pmod on an
-iCEBreaker V1.1a, and the fault that stopped it. The video output never worked.
-The reasoning is the point.
+A record of bringing up a hand-soldered 1BitSquared 12-bit DVI Pmod on an iCEBreaker V1.1a, and the fault that stopped it. The video output was not working.
 
 **Hardware:** iCEBreaker V1.1a (iCE40UP5K, SG48), 1BitSquared 12-bit DVI Pmod
 (TFP410), right-angle headers soldered by hand.
@@ -15,10 +13,7 @@ demo from the Beginning FPGA Graphics series.
 
 ## Starting position
 
-A blinking LED already worked on this board, which established more than it
-appears to. Board power, the 12 MHz oscillator, the FTDI programming path, and
-the entire synthesis-to-flash toolchain were all known-good before the DVI work
-began.
+A blinking LED already worked on this board, which established more than it appears to. Board power, the 12 MHz oscillator, the FTDI programming path, and the entire synthesis-to-flash toolchain were all known-good before the DVI work began.
 
 That left exactly three new variables for a video test: the Pmod board itself,
 the hand-soldered joints, and the DVI-specific HDL. Any failure had to be in one
