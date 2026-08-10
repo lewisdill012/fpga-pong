@@ -1,0 +1,34 @@
+## FPGA Pong - iCEBreaker V1.1a Board Constraints (12-bit DVI Pmod)
+## Signal names must match the port names on top_pong exactly.
+
+## Board Clock: 12 MHz
+set_frequency clk_12m   12
+set_io        clk_12m   35
+
+## Buttons
+## btn_rst is the on-board user button; the rest are on Pmod 2 (BTN Pmod)
+set_io btn_rst   10
+set_io btn_fire  19
+set_io btn_up    18
+set_io btn_dn    20
+
+## 12-bit DVI Pmod on Pmod 1A/1B
+set_io dvi_clk    38
+set_io dvi_hsync  31
+set_io dvi_vsync  28
+set_io dvi_de     32
+
+set_io dvi_r[0]   48
+set_io dvi_r[1]    2
+set_io dvi_r[2]    3
+set_io dvi_r[3]    4
+
+set_io dvi_g[0]   44
+set_io dvi_g[1]   45
+set_io dvi_g[2]   46
+set_io dvi_g[3]   47
+
+set_io dvi_b[0]   34
+set_io dvi_b[1]   36
+set_io dvi_b[2]   42
+set_io dvi_b[3]   43
