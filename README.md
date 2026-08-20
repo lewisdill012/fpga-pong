@@ -10,8 +10,6 @@ Using the open-source iCE40 toolchain — Yosys, nextpnr, IceStorm — on an iCE
 
 <img width="600" height="335" alt="ezgif-67c5eec18c5c12e3" src="https://github.com/user-attachments/assets/4a0344d0-873b-4f65-8a5c-0b1640ab9ee2" />
 
-![Pong running on iCEBreaker via 12-bit DVI](demo.gif)
-
 Pong running live on the iCEBreaker, output over the 12-bit DVI Pmod to a
 640×480@60Hz display. Shows the `PLAY` state with AI paddle tracking, ball
 collision, and the on-screen score.
