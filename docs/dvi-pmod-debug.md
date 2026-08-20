@@ -66,3 +66,4 @@ microscope:
 - Match the instrument to the problem: an unmeasurable 25 MHz fault became measurable at 0.35 s.
 - A control reading (5 MΩ on a known-good pin) is what makes another number mean anything.
 - Verify which pin you're actually on before building a theory on it.
+- Was forced to buy a new iCEBreaker
