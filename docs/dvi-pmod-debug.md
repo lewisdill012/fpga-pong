@@ -1,6 +1,6 @@
 # Debugging a 12-bit DVI Pmod on the iCEBreaker
 
-The video output had trouble worked. This is a record of why.
+The video output had trouble working. This is a record of why.
 
 **Hardware:** iCEBreaker V1.1a, 1BitSquared 12-bit DVI Pmod (TFP410), hand-soldered
 right-angle headers.
