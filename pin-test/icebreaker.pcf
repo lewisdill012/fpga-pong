@@ -1,7 +1,3 @@
-## Project F: FPGA Graphics - iCEBreaker Board Constraints (DVI)
-## (C)2023 Will Green, open source hardware released under the MIT License
-## Learn more at https://projectf.io/posts/fpga-graphics/
-
 ## Board Clock: 12 MHz
 set_frequency  clk_12m      12
 set_io -nowarn clk_12m      35

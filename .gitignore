@@ -1,6 +1,3 @@
-# Reference copy of Project F's pong, kept locally for comparison
-pong-projf
-
 # Build outputs
 *.json
 *.asc

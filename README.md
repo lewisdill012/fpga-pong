@@ -59,4 +59,7 @@ iceprog blink.bin
 
 ## Acknowledgments
 
-Design follows Will Green's [ProjectF](https://projectf.io) FPGA tutorial series (*Beginning FPGA Graphics*, *Pong*), released under the MIT license.
+The `pong/` modules are derived from Will Green's [Project F](https://projectf.io)
+FPGA tutorials — *Beginning FPGA Graphics* and [*FPGA Pong*](https://projectf.io/posts/fpga-pong/) —
+released under the MIT License. Ported to Verilog-2001 and adapted for the
+iCEBreaker + 12-bit DVI Pmod. See [LICENSE](LICENSE).

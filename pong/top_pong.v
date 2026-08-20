@@ -1,3 +1,10 @@
+// Based on Project F: FPGA Pong - Top Pong
+// (C)2021 Will Green, open source hardware released under the MIT License
+// Learn more at https://projectf.io/posts/fpga-pong/
+//
+// Modified 2026 by Lewis Dill: SystemVerilog -> Verilog-2001 for Yosys,
+// iCEBreaker 12-bit DVI Pmod pinout.
+
 `default_nettype none
 `timescale 1ns / 1ps
 

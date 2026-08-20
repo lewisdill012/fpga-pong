@@ -1,15 +1,22 @@
+// Based on Project F: FPGA Pong - Debounce
+// (C)2021 Will Green, open source hardware released under the MIT License
+// Learn more at https://projectf.io/posts/fpga-pong/
+//
+// Modified 2026 by Lewis Dill: SystemVerilog -> Verilog-2001 for Yosys,
+// iCEBreaker 12-bit DVI Pmod pinout.
+
 `default_nettype none
 `timescale 1ns / 1ps
 
 module debounce (
     input  wire clk,   // clock
     input  wire in,    // signal input
-    output reg out,   // signal output (debounced)
-    output reg ondn,  // on down (one tick)
-    output reg onup   // on up (one tick)
+    output reg out,   // signal output
+    output reg ondn,  // on down
+    output reg onup   // on up
     );
 
-    // sync with clock and combat metastability
+    // sync with clock, combat metastability
     reg sync_0, sync_1;
     always @(posedge clk) begin
         sync_0 <= in;
@@ -33,5 +40,4 @@ module debounce (
             if (max) out <= ~out;
         end
     end
-
 endmodule

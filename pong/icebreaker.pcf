@@ -1,5 +1,6 @@
-## FPGA Pong - iCEBreaker V1.1a Board Constraints (12-bit DVI Pmod)
-## Signal names must match the port names on top_pong exactly.
+## Project F: FPGA Graphics - iCEBreaker Board Constraints (DVI)
+## (C)2023 Will Green, open source hardware released under the MIT License
+## Learn more at https://projectf.io/posts/fpga-graphics/
 
 ## Board Clock: 12 MHz
 set_frequency clk_12m   12

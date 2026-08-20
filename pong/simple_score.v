@@ -1,16 +1,23 @@
+// Based on Project F: FPGA Pong - Simple Score
+// (C)2021 Will Green, open source hardware released under the MIT License
+// Learn more at https://projectf.io/posts/fpga-pong/
+//
+// Modified 2026 by Lewis Dill: SystemVerilog -> Verilog-2001 for Yosys,
+// iCEBreaker 12-bit DVI Pmod pinout.
+
 `default_nettype none
 `timescale 1ns / 1ps
 
 module simple_score #(
     parameter CORDW=10,                // coordinate width
-    parameter H_RES=640                // horizontal screen resolution
+    parameter H_RES=640                // horizontal resolution
     ) (
     input  wire pix_clk,         // pixel clock
-    input  wire [CORDW-1:0] sx,  // horizontal screen position
-    input  wire [CORDW-1:0] sy,  // vertical screen position
-    input  wire [3:0] score_l,   // score for left-side player (0-9)
-    input  wire [3:0] score_r,   // score for right-side player (0-9)
-    output reg pix              // draw pixel at this position?
+    input  wire [CORDW-1:0] sx,  // horizontal position
+    input  wire [CORDW-1:0] sy,  // vertical position
+    input  wire [3:0] score_l,   // score for left
+    input  wire [3:0] score_r,   // score for right
+    output reg pix              // draw
     );
 
     reg [0:14] chars [0:9];
