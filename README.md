@@ -6,6 +6,15 @@ Using the open-source iCE40 toolchain — Yosys, nextpnr, IceStorm — on an iCE
 **Toolchain:** OSS CAD Suite on Windows — Yosys, nextpnr-ice40, icetime, icepack, iceprog
 
 ---
+## Demo
+
+<img width="600" height="335" alt="ezgif-67c5eec18c5c12e3" src="https://github.com/user-attachments/assets/4a0344d0-873b-4f65-8a5c-0b1640ab9ee2" />
+
+![Pong running on iCEBreaker via 12-bit DVI](demo.gif)
+
+Pong running live on the iCEBreaker, output over the 12-bit DVI Pmod to a
+640×480@60Hz display. Shows the `PLAY` state with AI paddle tracking, ball
+collision, and the on-screen score.
 
 ## Contents
 
@@ -35,6 +44,21 @@ The Pong implementation, following ProjectF's design:
 ---
 
 ## Building
+
+### USB Driver Setup (Windows)
+
+`iceprog` needs the iCEBreaker's FTDI interface bound to WinUSB, not the default
+Windows driver:
+
+1. Install [Zadig](https://zadig.akeo.ie/)
+2. Plug in the board, open Zadig, enable **Options → List All Devices**
+3. Select **Interface 0** of the FTDI device — not Interface 1
+4. Replace the driver with **WinUSB**
+
+Driver binding is per-USB-port. Moving the board to a different port will
+likely require redoing this.
+
+### Environment
 
 The Windows OSS CAD Suite bundle doesn't include `make`, so `pong/build.sh` runs the pipeline as discrete commands instead. Launch the toolchain environment via `start.bat` (not `environment.bat` in an existing shell) so the required env vars are set, then:
 
